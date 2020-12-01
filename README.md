@@ -8,7 +8,7 @@
     + [Boundary Loss Function (B-Loss)](#d-boundary-oriented-loss-function-b-loss)
   * [Paper](#paper-boundary-oriented-binary-building-segmentation-model-with-two-scheme-learning-for-aerial-images)
 
-[[Paper-TBD]](https://github.com/Kyungsu-Lee/B3SM.git) [[Code]](https://github.com/Kyungsu-Lee/B3SM/blob/29899b6acebf64fe273c98bce5a449cb6edf565c/implementations/B3SM.py#L9)
+[[Paper-TBD]](https://github.com/Kyungsu-Lee/B3SM.git) [[Code]](implementations/B3SM.py)
 <br>
 <br>
 
@@ -49,7 +49,7 @@ $ python3 main_test.py --ip [Image_Path] --ap [Annotation Path] --mp [Model Stru
 ## Boundary-Oriented Binary Building Segmentation Model (B3SM)
 
 ### A. Boundary-Oriented Binary Building Segmentation Model (B3SM)
-[[Code]](https://github.com/Kyungsu-Lee/B3SM/blob/29899b6acebf64fe273c98bce5a449cb6edf565c/implementations/B3SM.py#L9)
+[[Code]](implementations/B3SM.py)
 
 The figure illustrates the pipeline of the proposed B3SM. The B3SM uses a modified FusionNet as a baseline architecture for two-scheme learning. For the B3SM, we developed B-Loss to derive more accurate shapes for segmented buildings in aerial images. Additionally, the USIM was designed as a connection between the first and second schemes, as well as the decoder of the second scheme. The key sub-parts of B3SM are in detail: (1) Two-scheme learning; (2) B-Loss; (3) USIM.
 
@@ -81,7 +81,7 @@ Output images of the USIM (left), nearest-neighbor interpolation (middle), and b
 
 
 ### C. Boundary-Oriented Intersection over Union (B-IoU)
-[[Code]](https://github.com/Kyungsu-Lee/B3SM/blob/528feea08cad9428dbf4d53d4dfdaea66de34a8f/implementations/evaluation_metric.py#L11)
+[[Code]](implementations/evaluation_metric.py)
 
 Evaluation metrics and their definitions. The P and G indicate the binarized images of Prediction and GroundTruth, respectively.
 <p align="center">
@@ -99,7 +99,7 @@ Example images for evaluation of an IoU value, a B-IoU value, and pixel accuracy
 
 
 ### D. Boundary-Oriented Loss Function (B-Loss)
-[[Code]](https://github.com/Kyungsu-Lee/B3SM/blob/25415bda591e03877bfde6fc2bb29389024ba309/implementations/loss_functions.py#L46)
+[[Code]](implementations/loss_functions.py)
 
 Evaluation metrics and their definitions. The P and G indicate the binarized images of Prediction and GroundTruth, respectively.
 <p align="center">
